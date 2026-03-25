@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinoda Hospital</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/lap/l11.png">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- ================= TOP BAR ================= -->
+    <div class="top-bar">
+        <div class="top-container">
+            <div class="top-flex">
+                <div class="top-left">
+                    <div class="top-item"><i class="fas fa-phone-volume"></i> +91 98765 43210</div>
+                    <div class="top-item"><i class="far fa-clock"></i> Mon–Sun 9:00 AM – 9:00 PM</div>
+                    <div class="top-item"><i class="far fa-envelope"></i> info@gmail.com</div>
+                </div>
+                <a href="contact.html" class="btn-appoint">Book Appointment</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <div class="container nav-container">
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/lap/l1.png" alt="Logo">
+                </a>
+            </div>
+
+
+            <!-- NAVIGATION -->
+            <nav>
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="services-toggle">
+                            Services
+                        </a>
+
+                        <!-- <ul class="dropdown-menu"> <i class="fa-solid fa-angle-down"></i>
+                            <li><a href="gynaecology.html">Gynaecology</a></li>
+                            <li><a href="obstetrics.html">Obstetrics</a></li>
+                            <li><a href="gynaecology-laparoscopic.html">Gynaecology Laparoscopic</a></li>
+                        </ul> -->
+                    </li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- MOBILE MENU BUTTON -->
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <!-- ================= JS ================= -->
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".nav-links");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+        const servicesToggle = document.querySelector(".services-toggle");
+        const dropdown = document.querySelector(".dropdown");
+
+        servicesToggle.addEventListener("click", function (e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.classList.toggle("active");
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>Your Health, Our Priority</h1>
+            <p>Providing compassionate care with advanced medical excellence.</p>
+            <a href="contact.html" class="btn-primary">Book Appointment</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="about">
+    <div class="about-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="about-image" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" alt="Hospital">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="about-content" data-aos="fade-left">
+            <h2>About Vinoda Hospital</h2>
+
+            <p>
+                Vinoda Hospital stands as a trusted name in healthcare, dedicated to providing high-quality medical services with compassion and excellence. 
+                Our hospital is equipped with state-of-the-art technology and modern infrastructure to ensure accurate diagnosis and effective treatment.
+            </p>
+
+            <p>
+                We have a team of highly experienced doctors, skilled nurses, and dedicated staff who work round the clock to deliver personalized care to every patient. 
+                From preventive care to advanced treatments, we focus on improving the health and well-being of the community.
+            </p>
+
+            <p>
+                Our commitment is to create a safe, comfortable, and patient-friendly environment where every individual receives attention, respect, and the best possible care.
+                We take pride in our team of highly qualified doctors, experienced medical professionals, and dedicated support staff who work together to ensure the best possible care. 
+Our approach focuses on patient safety, comfort, and personalized treatment plans tailored to individual needs.
+            </p>
+
+            <a href="about.html" class="btn-primary">Know More</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="doctor-pro">
+    <div class="doctor-wrap">
+
+        <!-- LEFT IMAGE -->
+        <div class="doctor-left" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2" alt="Doctor">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="doctor-right" data-aos="fade-left">
+
+            <h2 class="doc-name">Dr. Kavya Sharma</h2>
+
+            <p class="doc-degree">MBBS, MD (Gynecology)</p>
+
+            <p class="doc-special">
+                Obstetrician & Gynecologist | Infertility Specialist | Laparoscopic Surgeon
+            </p>
+
+            <p class="doc-desc">
+                Dr. Kavya Sharma is a highly skilled and experienced specialist dedicated to providing 
+                comprehensive women’s healthcare services. She focuses on advanced treatments, 
+                patient comfort, and personalized medical care.
+            </p>
+
+            <!-- SPECIALIZATION LIST -->
+            <ul class="doc-list">
+                <li>High-Risk Pregnancy Care</li>
+                <li>Normal & Cesarean Delivery</li>
+                <li>Infertility Treatment</li>
+                <li>Gynecological Surgeries</li>
+            </ul>
+
+            <!-- BUTTON -->
+            <a href="contact.html" class="doc-btn">Book Appointment</a>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="why-pro">
+
+    <div class="why-wrapper">
+
+        <h2 class="why-heading" data-aos="zoom-in">Why Choose Us</h2>
+
+        <div class="why-cards">
+
+            <div class="why-box" data-aos="fade-left">
+                <i class="fas fa-user-md"></i>
+                <h4>Expert Doctors</h4>
+            </div>
+
+            <div class="why-box" data-aos="fade-down">
+                <i class="fas fa-hospital-alt"></i>
+                <h4>Modern Infrastructure</h4>
+            </div>
+
+            <div class="why-box" data-aos="fade-down">
+                <i class="fas fa-heartbeat"></i>
+                <h4>Advanced Care</h4>
+            </div>
+
+            <div class="why-box" data-aos="fade-right">
+                <i class="fas fa-ambulance"></i>
+                <h4>24/7 Emergency</h4>
+            </div>
+
+            <div class="why-box" data-aos="fade-left">
+                <i class="fas fa-stethoscope"></i>
+                <h4>Accurate Diagnosis</h4>
+            </div>
+
+            <div class="why-box" data-aos="fade-up">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h4>Patient Care</h4>
+            </div>
+
+            <div class="why-box" data-aos="fade-up">
+                <i class="fas fa-procedures"></i>
+                <h4>Advanced Treatment</h4>
+            </div>
+
+            <div class="why-box" data-aos="fade-right">
+                <i class="fas fa-shield-heart"></i>
+                <h4>Trusted Service</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="spec-pro">
+
+    <div class="spec-wrapper">
+
+        <h2 class="spec-title" data-aos="zoom-in">Our Specialities</h2>
+
+        <div class="spec-row">
+
+            <div class="spec-box" data-aos="fade-up">
+                <i class="fas fa-heartbeat"></i>
+                <h4>Cardiology</h4>
+                <p>Advanced heart care with modern diagnostic and treatment solutions.</p>
+                <a href="#" class="spec-btn">Know More</a>
+            </div>
+
+            <div class="spec-box" data-aos="fade-down">
+                <i class="fas fa-brain"></i>
+                <h4>Neurology</h4>
+                <p>Expert care for brain and nervous system disorders with precision.</p>
+                <a href="#" class="spec-btn">Know More</a>
+            </div>
+
+            <div class="spec-box" data-aos="fade-up">
+                <i class="fas fa-bone"></i>
+                <h4>Orthopedics</h4>
+                <p>Comprehensive bone and joint care with advanced surgical techniques.</p>
+                <a href="#" class="spec-btn">Know More</a>
+            </div>
+
+            <div class="spec-box" data-aos="fade-down">
+                <i class="fas fa-baby"></i>
+                <h4>Pediatrics</h4>
+                <p>Complete child healthcare with compassionate and expert attention.</p>
+                <a href="#" class="spec-btn">Know More</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<section class="fac-pro">
+
+    <div class="fac-wrap">
+
+        <h2 class="fac-title" data-aos="zoom-in">Our Facilities</h2>
+
+        <div class="fac-grid">
+
+  <!-- ROW 1 -->
+            <div class="fac-box"><i class="ri-heart-pulse-line"></i><h4>Emergency Care</h4></div>
+            <div class="fac-box"><i class="ri-hospital-line"></i><h4>ICU Support</h4></div>
+            <div class="fac-box"><i class="ri-microscope-line"></i><h4>Diagnostics</h4></div>
+            <div class="fac-box"><i class="ri-capsule-line"></i><h4>Pharmacy</h4></div>
+
+            <!-- ROW 2 -->
+            <div class="fac-box"> <i class="ri-first-aid-kit-line"></i><h4>Operation Theatre</h4></div>
+            <div class="fac-box"><i class="ri-flask-line"></i><h4>Laboratory</h4></div>
+            <div class="fac-box"><i class="ri-radio-line"></i><h4>X-Ray Unit</h4></div>
+            <div class="fac-box"><i class="ri-hotel-bed-line"></i><h4>Patient Rooms</h4></div>
+
+            <!-- ROW 3 -->
+            <div class="fac-box"><i class="ri-stethoscope-line"></i><h4>Consultation</h4></div>
+           
+            <div class="fac-box"><i class="ri-pulse-line"></i><h4>ECG Monitoring</h4></div>
+            <div class="fac-box"><i class="ri-heart-add-line"></i><h4>Blood Bank</h4></div>
+            <div class="fac-box"><i class="ri-building-line"></i><h4>Reception</h4></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="highlights">
+
+    <div class="highlights-wrap">
+
+        <h2 class="highlights-title" data-aos="zoom-in">Our Highlights</h2>
+
+        <div class="highlights-grid">
+
+            <div class="highlight-box">
+                <h3><span class="counter" data-target="5000">0</span>+</h3>
+                <p>Happy Patients</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3><span class="counter" data-target="120">0</span>+</h3>
+                <p>Expert Doctors</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3><span class="counter" data-target="25">0</span>+</h3>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3><span class="counter" data-target="50">0</span>+</h3>
+                <p>Medical Services</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+
+        const increment = target / 200;
+
+        if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 20);
+        } else {
+            counter.innerText = target; // ✅ NO + HERE
+        }
+    };
+
+    updateCount();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="gallery-marquee">
+
+    <h2 class="gallery-title">Our Hospital Gallery</h2>
+
+    <div class="marquee">
+
+        <div class="marquee-track">
+
+            <!-- IMAGES -->
+            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3" />
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" />
+            <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b" />
+            
+            <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842" />
+
+            <!-- DUPLICATE FOR LOOP -->
+            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3" />
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" />
+            <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b" />
+        
+            <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842" />
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- ================= GOOGLE REVIEWS ================= -->
+<section class="google-review-section">
+
+    <h2 class="section-heading">Our Happy Clients</h2>
+
+    <div class="review-container">
+
+        <!-- LEFT SUMMARY -->
+        <div class="google-summary">
+            <h4>Vinoda Hospital</h4>
+
+            <div class="rating">
+                <span class="score">4.8</span>
+                <span class="stars">★★★★★</span>
+            </div>
+
+            <p class="review-count">Trusted by 1000+ Patients</p>
+
+            <a href="#" class="google-btn">Write a Review</a>
+        </div>
+
+        <!-- SLIDER -->
+        <div class="slider">
+            <div class="slider-track">
+
+                <div class="review-card">
+                    <h5>Sravani Reddy</h5>
+                    <div class="stars">★★★★★</div>
+                    <p>Excellent care and support throughout my treatment. Doctors are very patient.</p>
+                </div>
+
+                <div class="review-card">
+                    <h5>Ramesh Kumar</h5>
+                    <div class="stars">★★★★★</div>
+                    <p>Advanced facilities with caring staff. Highly recommended hospital.</p>
+                </div>
+
+                <div class="review-card">
+                    <h5>Priya Sharma</h5>
+                    <div class="stars">★★★★★</div>
+                    <p>Clean environment and friendly doctors. Very good experience.</p>
+                </div>
+
+                <div class="review-card">
+                    <h5>Anil Reddy</h5>
+                    <div class="stars">★★★★★</div>
+                    <p>Quick emergency response and excellent treatment.</p>
+                </div>
+
+                <!-- DUPLICATE FOR LOOP -->
+                <div class="review-card">
+                    <h5>Sravani Reddy</h5>
+                    <div class="stars">★★★★★</div>
+                    <p>Excellent care and support throughout my treatment.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="contact-section">
+
+    <div class="contact-wrap">
+
+        <!-- LEFT INFO -->
+        <div class="contact-left" data-aos="fade-right">
+
+            <h2>CONTACT US</h2>
+
+            <p class="contact-info">📍 Vinoda Hospital, Vijayawada, Andhra Pradesh</p>
+            <p class="contact-info">📞 +91 98765 43210</p>
+            <p class="contact-info">📧 info@vinodahospital.com</p>
+
+            <!-- MAP -->
+            <div class="map">
+                <iframe src="https://maps.google.com/maps?q=vijayawada&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
+
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="contact-right" data-aos="fade-left">
+
+            <h2>BOOK APPOINTEMNT</h2>
+
+            <form class="appointment-form">
+
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address" required>
+
+                <select required>
+                    <option value="">Select Service</option>
+                    <option>General Checkup</option>
+                    <option>Cardiology</option>
+                    <option>Neurology</option>
+                    <option>Orthopedics</option>
+                </select>
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <button type="submit">Book Appointment</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- QUICK LINKS -->
+        <div class="footer-col" data-aos="fade-right">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-col" data-aos="fade-right">
+            <h3>OUR SERVICES</h3>
+            <ul>
+                <li><a href="#">General Checkup</a></li>
+                <li><a href="#">Cardiology</a></li>
+                <li><a href="#">Neurology</a></li>
+                <li><a href="#">Orthopedics</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-col" data-aos="fade-left">
+            <h3>CONTACT INFO</h3>
+            <p>📍 Vinoda Hospital, Vijayawada</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📧 info@vinodahospital.com</p>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-col" data-aos="fade-left">
+            <h3>FOLLOW US</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Vinoda Hospital. All rights reserved.</p>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+</body>
+</html>
